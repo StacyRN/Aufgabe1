@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loose Typing</title>
+</head>
+<body>
+<script>
+	let number = 42;
+	let stringNumber = "42";
+	let string = "hello";
+	let array = [1, 2, 3];
+
+// Addieren Sie number und stringNumber.
+let sum1 = number + parseInt(stringNumber);
+console.log(sum1, typeof sum1); // Output: 84 number
+
+// Multiplizieren Sie number und stringNumber.
+let product1 = number * parseInt(stringNumber);
+console.log(product1, typeof product1); // Output: 1764 number
+
+// Addieren Sie number und string.
+let sum2 = number + string;
+console.log(sum2, typeof sum2); // Output: "42hello" string
+
+// Multiplizieren Sie number und string.
+let product2 = number * string;
+console.log(product2, typeof product2); // Output: NaN number
+
+// Addieren Sie number und array.
+let sum3 = number + array;
+console.log(sum3, typeof sum3); // Output: "421,2,3" string
+
+// Multiplizieren Sie number und array.
+let product3 = number * array;
+console.log(product3, typeof product3); // Output: NaN number
+</script>
+</body>
+</html> 
